@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Human Action Regconition</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <!-- header start -->
@@ -52,7 +52,7 @@
         <div class="cart_items_container">
             <div class="cart_item">
                 <span class="fas fa-times"></span>
-                <img src="./image/Cat_November_2010-1a.jpg" alt="">
+                <img src="../image/Cat_November_2010-1a.jpg" alt="">
                 <div class="content">
                     <h3>Pet follow 01</h3>
                     <div>Cat</div>
@@ -61,7 +61,7 @@
     
             <div class="cart_item">
                 <span class="fas fa-times"></span>
-                <img src="./image/doggy-date-night.jpg" alt="">
+                <img src="../image/doggy-date-night.jpg" alt="">
                 <div class="content">
                     <h3>Pet follow 02</h3>
                     <div>Dog</div>
@@ -92,7 +92,7 @@
             <h1 class="heading"><span>about</span> us </h1>
             <div class="row">
                 <div class="image">
-                    <img src="./img/Human-Activity-Prediction-using-ML-1024x522.png" alt="">
+                    <img src="{{ url_for('static', filename='img/Human-Activity-Prediction-using-ML-1024x522.png') }}" alt="">
                 </div>
                 <div class="content">
                     <h3>What make our Services useful?</h3>
@@ -110,14 +110,14 @@
             <h1 class="heading">our <span>menu</span> </h1>
             <div class="box-container">
                 <div class="box">
-                    <img src="./img/UCF101.jpg" alt="">
+                    <img src="{{ url_for('static', filename='img/UCF101.jpg') }}" alt="">
                     <h3>Human action regconition</h3>
                     <div class="follow">LSTM <span>UCF101</span></div>
                     <a href="#" class="btn">click to explore</a>   
                 </div>
     
                 <div class="box">
-                    <img src="./img/HMDB_snapshot1.png" alt="">
+                    <img src="{{ url_for('static', filename='img/HMDB_snapshot1.png') }}" alt="">
                     <h3>Human action regconition</h3>
                     <div class="follow">LSTM <span>HMDB51</span></div>
                     <a href="#" class="btn">click to explore</a>   
